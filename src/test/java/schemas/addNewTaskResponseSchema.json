@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "comment_count": {
+      "type": "integer"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "content": {
+      "type": "string"
+    },
+    "due": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "datetime": {
+          "type": "string"
+        },
+        "string": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "date",
+        "string"
+      ]
+    },
+    "id": {
+      "type": "integer"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "project_id": {
+      "type": "integer"
+    },
+    "section_id": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "comment_count",
+    "completed",
+    "content",
+    "id",
+    "order",
+    "priority",
+    "project_id",
+    "section_id",
+    "url"
+  ]
+}
